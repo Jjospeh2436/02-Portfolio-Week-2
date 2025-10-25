@@ -1,16 +1,15 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(9, 9, 9);
+    background-color: rgba(1, 37, 9, 0.605);
     color: white;
 }
 
 header {
-    justify-content: ;
     padding: 1%;
 }
 
-nav {
+.head {
     display: flex;
     justify-content: space-evenly;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -44,7 +43,7 @@ a {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-img {
+.first {
     width: 70%;
     height: inherit;
     object-fit: cover;
@@ -62,17 +61,109 @@ img {
 }
 
 
-p {
+.about {
     display: flex;
     justify-content: center;
     font-size: 200%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-footer{
-    padding-top: 4%;
+nav {
+    padding-top: 3%;
     display: flex;
-    justify-content: center;
-    font-size: 120%;
+    justify-content: space-evenly;
+    font-size: 25px;
     color: rgb(148, 147, 147);
+
 }
+
+.project {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    
+}
+
+.card {
+    box-shadow: 0 2px 0 5px rgba(255, 255, 255, 0.2);
+    border-color: white;
+    text-align: center;
+    border-radius: 5%;
+    transition: 0.3s;
+}
+
+.card h4 {
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card p {
+    padding: 2%;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.card:hover {
+  box-shadow: 0 4px 0 7px rgba(255, 255, 255, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.second {
+    width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        display: flex;
+        flex-flow: column wrap;
+        padding-top: 2%;
+        padding-left: 20%;
+    }
+
+    .intro {
+        display: flex;
+        justify-content: center;
+        font-size: 300%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: aquamarine;
+    }
+
+    .role{
+        font-size: 200%;
+        font-family:'Gill Sans', 'Gill Sans MT', 
+        Calibri, 'Trebuchet MS', sans-serif;
+        color: aquamarine;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        font-size: 150%;
+        padding: 2%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .project {
+        padding-top: 10%;
+    }
+
+    .card h4 {
+        font-size: 30px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .card p {
+    padding: 2%;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    footer {
+        padding-top: 10%;
+    }
+}
+
