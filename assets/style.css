@@ -17,11 +17,12 @@ header {
     padding: 1%;
 }
 
+/* Top bar with About / Projects / Contact */
 a {
     text-decoration: none;
     color: white;
 }
-
+ /* Main section of the page that includes the img and name/role */
 .main {
     display: flex;
     justify-content: center;
@@ -29,6 +30,8 @@ a {
     padding-left: 20%;
 }
 
+/* Set the specific role to be a bigger size and color then the rest of 
+header */
 .role{
     font-size: 400%;
     font-family:'Gill Sans', 'Gill Sans MT', 
@@ -36,6 +39,8 @@ a {
     color: aquamarine;
 }
 
+/* Adjust the main header allowing both the name/role to be bigger and
+in the correct position */
 .main h2 {
     font-size: 150%;
     padding-top: 14%;
@@ -43,6 +48,7 @@ a {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Sets the size of the image while adding style with border radius */
 .first {
     width: 70%;
     height: inherit;
@@ -50,6 +56,7 @@ a {
     border-radius: 9%;
 }
 
+/* Positions the title "Introdcution" and sets the size and color */
 .intro {
     display: flex;
     justify-content: center;
@@ -77,6 +84,7 @@ nav {
 
 }
 
+/* Main section of the project cards and sets their position */
 .project {
     display: flex;
     justify-content: space-evenly;
@@ -84,6 +92,7 @@ nav {
     
 }
 
+/* Styling of the cards */
 .card {
     box-shadow: 0 2px 0 5px rgba(255, 255, 255, 0.2);
     border-color: white;
@@ -92,18 +101,20 @@ nav {
     transition: 0.3s;
 }
 
+/* Styling of the header in the cards */
 .card h4 {
     font-size: 50px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Styling of the paragraph in the cards */
 .card p {
     padding: 2%;
     font-size: 30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+/* Sets a pseudo-class to add styling when hovering over the cards */
 .card:hover {
   box-shadow: 0 4px 0 7px rgba(255, 255, 255, 0.2);
 }
@@ -116,6 +127,7 @@ nav {
     width: 40%;
 }
 
+/* Positions the page to fits standard tablets and phones */
 @media only screen and (max-width: 768px) {
     .main {
         display: flex;
